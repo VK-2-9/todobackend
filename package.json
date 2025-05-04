@@ -5,5 +5,25 @@
     "mongodb": "^6.16.0",
     "mongoose": "^8.14.1",
     "mongosh": "^2.5.0"
-  }
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VK-2-9/todobackend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VK-2-9/todobackend/issues"
+  },
+  "homepage": "https://github.com/VK-2-9/todobackend#readme"
 }
