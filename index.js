@@ -1,13 +1,12 @@
 const express=require("express")
 const cors=require("cors")
 const mongoose=require("mongoose")
-const ObjectId=require("mongodb")
 
 const app=express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://vk:123@todo.eu6eao1.mongodb.net/todo").then(()=>console.log("db connected")).catch(()=>console.log("db failed"))
+mongoose.connect("mongodb+srv://vk:123@todo.eu6eao1.mongodb.net/todo").then(()=>console.log("db connected")).catch((err)=>console.log("db failed",err))
 
 const Task=mongoose.model("Task",{task:String,color:String},"task")
 
