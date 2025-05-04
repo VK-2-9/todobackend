@@ -7,7 +7,7 @@ const app=express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb://127.0.0.1:27017/todo").then(()=>console.log("db connected")).catch(()=>console.log("db failed"))
+mongoose.connect("mongodb+srv://vk:123@todo.eu6eao1.mongodb.net/todo").then(()=>console.log("db connected")).catch(()=>console.log("db failed"))
 
 const Task=mongoose.model("Task",{task:String,color:String},"task")
 
